@@ -1,0 +1,148 @@
+{
+  "info": {
+    "_postman_id": "65cb1ab5-c9bf-4eb0-beab-0e11b04f697d",
+    "name": "My Collection Copy",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58118640",
+    "_collection_link": "https://go.postman.co/collection/58118640-65cb1ab5-c9bf-4eb0-beab-0e11b04f697d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "login",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Transactions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard Summary",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "GET  http://localhost:5000/api/dashboard/summary",
+          "protocol": "GET  http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "dashboard",
+            "summary"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard Trends",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard Categories",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/dashboard/categories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "dashboard",
+            "categories"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Export Transactions (CSV)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/transactions/export?columns=id,date,amount,category,status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "transactions",
+            "export"
+          ],
+          "query": [
+            {
+              "key": "columns",
+              "value": "id,date,amount,category,status"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": ""
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ]
+}
